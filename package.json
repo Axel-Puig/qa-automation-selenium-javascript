@@ -1,0 +1,41 @@
+{
+  "name": "qa-automation-selenium-javascript",
+  "version": "1.0.0",
+  "description": "Beginner-friendly UI automation portfolio project with Selenium WebDriver, JavaScript and Mocha.",
+  "private": true,
+  "scripts": {
+    "test": "mocha",
+    "test:headed": "cross-env HEADLESS=false mocha",
+    "test:firefox": "cross-env BROWSER=firefox mocha",
+    "test:edge": "cross-env BROWSER=edge mocha",
+    "test:ci": "cross-env MOCHA_FILE=test-results/junit.xml mocha --reporter mocha-junit-reporter"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axel-Puig/qa-automation-selenium-javascript.git"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "selenium",
+    "javascript",
+    "mocha",
+    "testing",
+    "page-object-model"
+  ],
+  "author": "Axel Puig Lugo",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "10.1.0",
+    "mocha": "11.8.0",
+    "mocha-junit-reporter": "2.2.1",
+    "selenium-webdriver": "4.47.0"
+  },
+  "overrides": {
+    "diff": "8.0.3",
+    "serialize-javascript": "7.0.5"
+  }
+}
